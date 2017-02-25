@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_city_current_weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.openweathermap.android.weather.view.activities.CityCurrentWeatherActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/color_white">
+    </android.support.v7.widget.Toolbar>
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress_temperature"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/owm_16dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        custom:arc_max="@integer/max_temperature"
+        custom:arc_suffix_text="@string/degree_celsius"
+        custom:arc_finished_color="@color/color_temperature_finished"
+        custom:arc_unfinished_color="@color/color_temperature_unfinished"
+        custom:arc_progress="0"
+        custom:arc_bottom_text="Temperature"
+        custom:arc_bottom_text_size="@dimen/owm_16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arc_progress_temperature"
+        android:layout_marginLeft="@dimen/owm_16dp"
+        android:layout_marginRight="@dimen/owm_16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_min_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/owm_16dp"/>
+
+        <TextView
+            android:id="@+id/txt_max_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/owm_16dp"/>
+
+        <TextView
+            android:id="@+id/txt_wind_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/owm_16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
