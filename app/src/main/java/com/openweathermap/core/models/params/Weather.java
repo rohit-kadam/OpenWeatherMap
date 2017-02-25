@@ -23,7 +23,6 @@ import com.google.gson.annotations.SerializedName;
 /**
  * This class contains more info Weather condition codes.
  *
- * @author {@link 'https://github.com/kevalpatel2106'}x
  */
 public class Weather {
 

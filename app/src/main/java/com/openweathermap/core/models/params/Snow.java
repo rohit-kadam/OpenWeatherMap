@@ -19,12 +19,6 @@ package com.openweathermap.core.models.params;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by Keval on 16-Jan-17.
- *
- * @author {@link 'https://github.com/kevalpatel2106'}
- */
-
 public class Snow {
 
     @SerializedName("3h")

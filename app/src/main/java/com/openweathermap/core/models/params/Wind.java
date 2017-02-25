@@ -23,7 +23,6 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Wind information.
  *
- * @author {@link 'https://github.com/kevalpatel2106'}
  */
 public class Wind {
 

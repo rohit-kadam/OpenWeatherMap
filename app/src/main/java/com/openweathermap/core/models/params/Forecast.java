@@ -21,12 +21,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-/**
- * Created by Keval on 16-Jan-17.
- *
- * @author {@link 'https://github.com/kevalpatel2106'}
- */
-
 public class Forecast {
     @SerializedName("dt")
     @Expose
